@@ -54,6 +54,7 @@ function showList(lista, button = "all"){
         lista[2].classList.add('ativo');
         lista[3].classList.add('ativo');
         lista[5].classList.add('ativo'); //namoro
+        lista[6].classList.add('ativo');
     }
     if(button == "mobile"){
         lista[0].classList.add('');

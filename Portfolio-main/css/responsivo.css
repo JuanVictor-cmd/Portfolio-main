@@ -1,0 +1,391 @@
+/*Responsivo*/
+
+@media (max-width: 992px){
+
+    .projects{
+        font-size: 1.5rem;
+    }
+
+    .section-div img{
+        display: none;
+    }
+
+    .section-div div{
+        margin-top: 650px;
+        font-size: 1.5rem;
+    }
+
+    .section-div{
+        background-image: url(../assets/Coding.gif);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+    
+    header .nav-primary{
+        display: none;
+    }
+
+    header .nav-primary.ativado{
+        background-color: whitesmoke;
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        top: 60px;
+        color: white;
+        z-index: 5;
+        padding: 30px;
+        font-size: 2rem;
+        border-radius: 0 0 4px 4px;
+        right: .5px;
+        animation: sobreSecao .8s ease-in-out forwards;
+    }
+
+    header .nav-primary li a{
+        color: var(--primary-color);
+        width: 0px;
+        height: 0px;
+        font-size: 1.3rem;
+        font-family: 'Hammersmith One', 'Poppins', sans-serif;
+    }
+
+    header i{
+        color: #f7f7f7;
+        font-size: 2.5rem;
+    }
+
+
+    .sobre img{
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .sobre-texto p {
+        padding: 5px;
+        font-size: 1.7rem;
+    }
+
+    .sobre-conteudo {
+        grid-column: 1/-1;
+    }
+
+    .sobre-info{
+        gap: 15px;
+    }
+
+    .sobre-info i{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        margin-left: 15px;
+    }
+
+    .sobre-info p{
+        font-size: 1.2rem;
+        gap: 10px;
+        display: grid;
+        font-family: 'Poppins';
+        text-align: center;
+    }
+
+    .section-div div h2{
+        width: 500px;
+    }
+
+    .section-div div a{
+        padding: 15px;
+        font-size: 1.4rem;
+    }
+
+    .sobre-texto h1 {
+        font-size: 3rem;
+        padding: 5px;
+    }
+
+    .sobre-titulo{
+        margin-top: 15px;
+    }
+
+    .img-sobre{
+        width: 100%;
+    }
+
+    .projects-armazenamento ul{
+        display: grid;
+        margin-top: 60px;
+        gap: 30px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px){
+    #bar{
+        display: none;
+    }
+}
+
+
+
+
+
+/*Mobile*/
+@media (max-width: 430px){
+
+    main .sobre{
+        margin-top: 30px;
+    }
+
+    .my-skills ul li{
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+        display: flex;
+        gap: 30px;
+        text-align: center;
+        align-content: center;
+        max-width: 300px;
+        height: 300px;
+        border: 6px;
+        background-color: whitesmoke;
+    }
+
+    .section-div #div-resp{
+        margin-top: 20rem;
+        width: 100%;
+        margin-left: 3rem;
+        font-size: .9rem;
+        gap: 20px;
+    }
+
+    .section-div{
+        margin-top: 20px;
+        padding: 80px;
+    }
+
+    .section-div div h2{
+        width: 300px;
+    }
+
+    .section-div div a{
+        padding: 15px;
+        font-size: .8rem;
+        width: 8rem;
+        text-align: center;
+    }
+
+    .sobre-texto h1 {
+        font-size: 1.5rem;
+        font-family: 'Poppins';
+        padding: 5px;
+    }
+
+    .sobre-conteudo {
+        grid-column: none;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .img-sobre{
+        display: none;
+    }
+
+    .sobre-texto p {
+        padding: 1px;
+        font-size: 1rem;
+    }
+
+    .sobre-conteudo {
+        grid-column: 1/-1;
+    }
+
+    .sobre-info{
+        gap: 30px;
+    }
+
+    .sobre-info p{
+        font-size: 11px;
+        gap: 10px;
+        display: grid;
+        font-family: 'Poppins';
+        text-align: center;
+    }
+
+    .sobre-info i{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        margin-left: 15px;
+    }
+
+    .sobre-titulo{
+        margin-top: 15px;
+    }
+
+    .sobre-titulo p{
+        font-size: 1rem;
+    }
+
+    .habilidades{
+        margin-top: 200px;
+        padding: 60px;
+    }
+
+    .habilidades{
+        margin-top: 30px !important;
+    }
+
+    .my-skills{
+        padding: 24px;
+        color: #252525;
+        font-family: 'Poppins';
+    }
+
+    .my-skills ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my-skills ul li{
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+        display: grid;
+        gap: 30px;
+        text-align: center;
+        align-content: center;
+        max-width: 300px;
+        height: 300px;
+        border: 6px;
+        background-color: whitesmoke;
+    }
+
+    .my-skills ul li i{
+        font-size: 5rem;
+    }
+
+    .my-skills ul li h3{
+        font-size: 1.5rem;
+    }
+
+    .my-skills ul li p{
+        color: rgb(103, 103, 103);
+        font-size: 1rem;
+    }
+
+
+    .projects{
+        padding: 30px;
+        display: grid;
+        justify-content: center;
+        gap: 50px;
+        font-size: .9rem;
+    }
+
+    .projects ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    .projects-models ul li{
+        cursor: pointer;
+        font-family: 'Poppins';
+        background-color: whitesmoke;
+        border: solid 2px var(--primary-color);
+        padding: 3px 6px;
+        color: #707070;
+    }
+
+    .projects-armazenamento ul{
+        display: grid;
+        margin-top: 60px;
+        gap: 30px;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects-armazenamento ul li{
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .projects-armazenamento ul li img{
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        border: #252525 1px solid;
+        cursor: pointer;
+        filter: blur(0);
+    }
+
+    .project-a{
+        background-color: whitesmoke;
+        justify-self: center;
+        padding: 18px 25px;
+        font-family: 'Poppins';
+        border: 2px solid var(--primary-color);
+        color: #707070;
+        font-size: .8rem;
+    }
+
+    /*Footer*/
+
+    footer{
+        background-color: #252525;
+        padding: 30px;
+        margin-top: 30px;
+        width: 435px;
+        align-self: center;
+    }
+
+    footer .sobre-titulo h1{
+        font-size: 20px;
+    }
+
+    .footer-social{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        color: #f7f7f7;
+    }
+
+    .footer-social i{
+        padding: 12px;
+        font-size: 1.5rem;
+        color: #f7f7f7;
+    }
+
+
+    .footer-social::before{
+        content: '';
+        height: 5px;
+        width: 200px;
+        background-color: #8C52FF;
+        bottom: -30px;
+        position: absolute;
+    }
+
+    footer .footer-comercial{
+        text-align: center;
+        color: #fff;
+        margin: 50px auto;
+        font-size: .9rem;
+        font-family: 'Poppins';
+    }
+
+}

@@ -1,0 +1,83 @@
+/*Projetos*/
+
+.projects{
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projects ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projects-models ul li{
+    cursor: pointer;
+    font-family: 'Poppins';
+    background-color: whitesmoke;
+    border: solid 2px var(--primary-color);
+    padding: 6px 20px;
+    color: #707070;
+}
+
+.projects-models ul li.ativo{
+    cursor: pointer;
+    background-color: #8C52FF;
+    color: whitesmoke;
+}
+
+.projects-models ul li:hover{
+    background-color: #8C52FF;
+    color: whitesmoke;
+    transition: .5s ease-in-out;
+}
+
+.projects-armazenamento ul{
+    display: grid;
+    margin-top: 60px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.projects-armazenamento ul li{
+    display: none;
+    max-width: 100%;
+    height: 100%;
+}
+
+.projects-armazenamento ul li.ativo{
+    display: block;
+    animation: animationButton 2s ease-in-out forwards;
+}
+
+.projects-armazenamento ul li img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: #252525 1px solid;
+    cursor: pointer;
+    filter: blur(0);
+}
+
+.projects-armazenamento ul li img:hover{
+    transition: .5s ease-in;
+    filter: blur(1px);
+}
+
+.project-a{
+    background-color: whitesmoke;
+    justify-self: center;
+    padding: 20px 40px;
+    font-family: 'Poppins';
+    border: 2px solid var(--primary-color);
+    color: #707070;
+}
+
+.project-a:hover{
+    background-color: #8C52FF;
+    color: whitesmoke;
+    transition: .5s ease-in-out;
+}

@@ -1,0 +1,87 @@
+/* Habilidades*/
+
+.habilidades{
+    margin-top: 200px;
+    padding: 60px;
+}
+
+.my-skills{
+    padding: 60px;
+    color: #252525;
+    font-family: 'Poppins';
+}
+
+.my-skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-skills ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    border: 6px;
+    background-color: whitesmoke;
+}
+
+.my-skills ul li i{
+    font-size: 5rem;
+}
+
+.my-skills ul li h3{
+    font-size: 1.5rem;
+}
+
+.my-skills ul li p{
+    color: rgb(103, 103, 103);
+    font-size: 1rem;
+}
+
+.my-skills li::before{
+    content: '';
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: .5s ease-in-out;
+}
+
+.my-skills li::after{
+    content: '';
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: .5s ease-in-out;
+}
+
+.my-skills li:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+}
+
+.my-skills li:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+}

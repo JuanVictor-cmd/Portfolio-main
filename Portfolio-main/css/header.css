@@ -1,0 +1,44 @@
+/*Header*/
+
+header{
+    background-color: #252525;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header .nav-primary{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header .nav-primary li a{
+    color: white;
+    width: 0px;
+    height: 0px;
+    font-size: 1.3rem;
+    font-family: 'Hammersmith One', 'Poppins', sans-serif;
+}
+
+header .nav-primary li a::after{
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .5s;
+}
+
+header .nav-primary li a:hover::after{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid var(--primary-color);
+}
